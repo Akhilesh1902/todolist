@@ -1,0 +1,103 @@
+* , *::after, *::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scrollbar-width: none;
+}
+
+body{
+    background:linear-gradient( 45deg, #f1f2b5, #135058);
+    // background-color: #adf0d1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    padding: 2em;
+    margin: 5em 0;
+    // margin-top: 4em;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px 25px ;
+    box-shadow: 10px 20px 40px rgb(70, 70, 70), -10px -20px 40px white;
+    background-color: rgba(84, 255, 226, 0.2);
+
+}
+
+.heading{
+    text-transform: capitalize;
+    color: #00203f;
+    // background-color: #00203f;
+    padding-bottom: 1em;
+    text-shadow: 5px 5px 5px  rgba(0, 31, 61, .4);
+
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style:circle;
+    justify-content: center;
+
+}
+.list-item{
+    list-style: none;
+    color: rgb(80, 55, 9);
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, .5);
+    margin:.5em;
+    padding: .2em;
+}
+.list-item:hover,
+.list-item:focus{
+    background-color:rgba(255, 0, 0, 0.6) ;
+    color: white;
+    transition: all .4s ease-in;
+    cursor:pointer;
+}
+.userInput{
+    display: flex;
+    flex-direction: column;
+}
+
+#userText{
+    margin: 1em 0;
+    padding: .2em;
+}
+button{
+    background-color: #00203f;
+    color: #adf0d1;
+    font-size: 1.125rem;
+    padding: .5em;
+    border: none;
+    border-radius: 5px 15px;
+}
+button:focus,
+button:hover{
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+
+}
+
+@media (min-width: 900px) {
+    body{
+        background-color: yellow;
+        font-size: 1.5rem;
+ 
+    }
+    .container{
+        max-width: 50vw;
+        justify-content: space-between;
+    
+    }
+}
